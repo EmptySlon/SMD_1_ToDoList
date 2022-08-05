@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    >
+
+
+    <CheckBox
+        android:id="@+id/checkBoxCompletedTaskRecycle"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="20dp"
+        tools:layout_editor_absoluteY="20dp"
+
+        />
+    <TextView
+        android:id="@+id/txTaskRecycle"
+        android:layout_gravity="center"
+        android:layout_marginStart="10dp"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:fontFamily="sans-serif-condensed-medium"
+        tools:text="Задача"
+        />
+    <ImageView
+        android:id="@+id/imgInfoRecycle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_info"
+        android:layout_gravity="center"
+        />
+
+</LinearLayout>

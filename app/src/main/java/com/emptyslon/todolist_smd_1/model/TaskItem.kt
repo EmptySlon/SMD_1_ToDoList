@@ -4,12 +4,12 @@ import android.icu.text.SimpleDateFormat
 import java.util.*
 
 
-data class TodoItem(
+data class TaskItem(
     val id: String,
-    val toDoText: String,
-    val importance: Int = 1,
-    val isMade: Boolean,
-    val dataCreation : Date,
+    var toDoText: String,
+    var importance: Int = 1,
+    var isMade: Boolean,
+    var dataCreation : Date,
 ) {
 }
 
