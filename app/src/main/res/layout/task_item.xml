@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="horizontal"
+
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
 
     >
 
 
     <CheckBox
         android:id="@+id/checkBoxCompletedTaskRecycle"
-        android:layout_gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         tools:layout_editor_absoluteX="20dp"
@@ -20,20 +21,28 @@
         />
     <TextView
         android:id="@+id/txTaskRecycle"
-        android:layout_gravity="center"
-        android:layout_marginStart="10dp"
-        android:layout_width="250dp"
+        app:layout_constraintTop_toTopOf="@id/imgInfoRecycle"
+        app:layout_constraintStart_toEndOf="@id/checkBoxCompletedTaskRecycle"
+        app:layout_constraintEnd_toStartOf="@id/imgInfoRecycle"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:textSize="14sp"
+        android:ellipsize="end"
+        android:maxLines="3"
         android:fontFamily="sans-serif-condensed-medium"
-        tools:text="Задача"
+        android:textColor="@color/label_primary"
+        tools:text="За дача Зад ача Зада ча Зад ача За дача Зада ча Зада ча За дача Задача Задача Задача Задача Задача Задача Задача Задача Задача Задача"
         />
     <ImageView
+        android:layout_marginTop="4dp"
         android:id="@+id/imgInfoRecycle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/ic_baseline_info"
-        android:layout_gravity="center"
+        android:layout_gravity="end"
+
         />
 
-</LinearLayout>
+</android.support.constraint.ConstraintLayout>

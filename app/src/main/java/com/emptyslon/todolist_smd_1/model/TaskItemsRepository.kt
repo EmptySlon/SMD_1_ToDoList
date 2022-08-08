@@ -23,7 +23,7 @@ class TaskItemsRepository {
                     random.nextInt().toString(),
                     "Постирать носки",
                     2,
-                    false,
+                    true,
                     dataFormat.parse("06.07.2022")
                 ),
                 TaskItem(
