@@ -3,4 +3,10 @@
     <string name="myTasks">Мои дела</string>
     <string name="performed">Выполнено - 0</string>
     <string name="New">Новое</string>
+    <string name="Hint_new_task">Что нужно сделать...</string>
+    <string name="save_task">сохранить</string>
+    <string name="Importance">Важность</string>
+    <string name="No">Нет</string>
+    <string name="Make_up">Сделать до</string>
+    <string name="Delete">Удалить</string>
 </resources>

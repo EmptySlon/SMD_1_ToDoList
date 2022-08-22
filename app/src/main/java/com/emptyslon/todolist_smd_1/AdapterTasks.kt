@@ -27,6 +27,7 @@ class AdapterTasks() : RecyclerView.Adapter<AdapterTasks.TasksHolder>() {
             binding.imgInfoRecycle.setOnClickListener {
                 val myIntent = Intent(it.context, DetailsTaskActivity::class.java)
                 myIntent.putExtra("position", position)
+                Log.d("MyTag", position.toString() )
                 it.context.startActivity(myIntent)
 
             }
