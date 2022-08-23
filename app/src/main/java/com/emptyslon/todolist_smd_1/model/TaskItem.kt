@@ -7,9 +7,9 @@ import java.util.*
 data class TaskItem(
     val id: String,
     var toDoText: String,
-    var importance: Int = 1,
+    var importance: Int,
     var isMade: Boolean,
-    var dataCreation : Date,
+    var dataCreation : Date?,
 ) {
 }
 

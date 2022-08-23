@@ -15,7 +15,7 @@ class TaskItemsRepository {
                 TaskItem(
                     random.nextInt().toString(),
                     "Постирать футболку",
-                    1,
+                    1 ,
                     false,
                     dataFormat.parse("05.07.2022")
                 ),
@@ -32,6 +32,13 @@ class TaskItemsRepository {
                     3,
                     false,
                     dataFormat.parse("07.07.2022")
+                ),
+                TaskItem(
+                    random.nextInt().toString(),
+                    "Постирать кепку",
+                    3,
+                    false,
+                    null
                 ),
             )
 
